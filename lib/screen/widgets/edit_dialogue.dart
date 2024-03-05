@@ -113,13 +113,13 @@ editDialogue(
                   );
 
                   controller.selectedImage = '';
-
+                  Get.back();
                   Get.snackbar(
                     'Success',
                     'Successfully Edited',
                     backgroundColor: const Color.fromARGB(106, 54, 244, 73),
+                    duration: Duration(microseconds: 800)
                   );
-                  Get.back();
                 }
               }
             },

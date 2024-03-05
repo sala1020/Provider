@@ -92,14 +92,17 @@ class AddStudent extends StatelessWidget {
                         Get.back(result: 'back');
                         controller.updateStudentListView();
                         Get.snackbar('Success', 'Created Successfully',
-                            backgroundColor: Color.fromARGB(106, 54, 244, 73),
-                            dismissDirection: DismissDirection.horizontal);
+                            backgroundColor:
+                                const Color.fromARGB(106, 54, 244, 73),
+                            dismissDirection: DismissDirection.horizontal,
+                            duration: const Duration(milliseconds: 800));
                       }
                     } else {
                       Get.snackbar('error', 'Plz Select image',
                           backgroundColor:
                               const Color.fromARGB(106, 244, 67, 54),
-                          dismissDirection: DismissDirection.horizontal);
+                          dismissDirection: DismissDirection.horizontal,
+                          duration: const Duration(milliseconds: 800));
                     }
                   },
                   style: const ButtonStyle(

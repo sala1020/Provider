@@ -39,6 +39,7 @@ class StudentController extends ChangeNotifier {
 
   void deleteStudent({required int index}) {
     studentBox.deleteAt(index);
+    Get.back();
     notifyListeners();
   }
 
